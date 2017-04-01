@@ -10,6 +10,11 @@
 
 @implementation EditFilterSampleController
 
+- (void)viewDidLoad{
+    [super viewDidLoad];
+    self.defaultStyleView.bottomBar.hidden = YES;
+}
+
 /**
  *  初始化视图
  */
@@ -35,7 +40,7 @@
     self.enableFilterHistory = NO;
     
     // 开启在线滤镜
-    self.enableOnlineFilter = YES;
+//    self.enableOnlineFilter = YES;
 }
 
 /**

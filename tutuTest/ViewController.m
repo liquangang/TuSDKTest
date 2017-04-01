@@ -69,17 +69,6 @@ static const CGFloat screenWidth(){
     self.finishImageView.image = result.image;
 }
 
-/**
- *  图片编辑完成  (异步方法)
- *
- *  @param controller 图片编辑滤镜控制器
- *  @param result 处理结果
- *  @return BOOL 是否截断默认处理逻辑 (默认: NO, 设置为YES时使用自定义处理逻辑)
- */
-- (BOOL)onAsyncTuSDKPFEditFilter:(TuSDKPFEditFilterController *)controller result:(TuSDKResult *)result{
-    return NO;
-}
-
 #pragma mark - interface
 
 - (void)tuSDKInit{
@@ -97,7 +86,7 @@ static const CGFloat screenWidth(){
 }
 
 - (void)setUI{
-    [self.view addSubview:self.photoLibraryButton];
+//    [self.view addSubview:self.photoLibraryButton];
     [self.view addSubview:self.editFiterButton];
     [self.view addSubview:self.originImageView];
     [self.view addSubview:self.finishImageView];
